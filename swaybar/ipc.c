@@ -395,9 +395,9 @@ bool ipc_get_workspaces(struct swaybar *bar) {
 					output->focused = true;
 				}
 				ws->urgent = json_object_get_boolean(urgent);
-				if (ws->urgent) {
-					bar->visible_by_urgency = true;
-				}
+				//if (ws->urgent) {
+				//	bar->visible_by_urgency = true;
+				//}
 				wl_list_insert(output->workspaces.prev, &ws->link);
 			}
 		}
